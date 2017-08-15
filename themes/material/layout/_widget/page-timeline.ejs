@@ -46,7 +46,7 @@
 	.md-timeline-info {
 		height: 20px;
 		width: 100%;
-		margin: 10px 0px;
+		margin: 10px 0;
 	}
 
 	.md-timeline-info-span {
@@ -110,7 +110,7 @@
 		left: 0;
 		width: 60px;
 		height: 40px;
-		border-radius: box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+		box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 	}
 
 	.md-timeline-date.blue {
@@ -447,7 +447,7 @@
 </style>
 
 <section id="md-timeline" class="md-container">
-	<% if (site.posts.length) { - %>
+	<% if (site.posts.length) { %>
 	<% site.posts.sort('date', -1).limit(site.posts.length).each(function(post){ %>
 	<div class="md-timeline-block">
 		<div class="md-timeline-date blue">
@@ -482,7 +482,7 @@
 		</div>
 	</div>
 	<% }) %>
-	<% } - %>
+	<% } %>
 </section>
 
 <script type="text/ls-javascript" id="page-timeline-script">
