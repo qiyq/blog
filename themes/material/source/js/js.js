@@ -345,7 +345,6 @@ var componentHandler = function () {
             t(e)
         }
     }
-
     var c = [],
         u = [],
         p = "mdlDowngrade_",
@@ -361,7 +360,7 @@ var componentHandler = function () {
     }
 }();
 window.addEventListener("load", function () {
-    "use strict";
+        "use strict";
     "classList" in document.createElement("div") && "querySelector" in document && "addEventListener" in window && Array.prototype.forEach ? (document.documentElement.classList.add("mdl-js"), componentHandler.upgradeAllRegistered()) : componentHandler.upgradeElement = componentHandler.register = function () {
     }
 }),
@@ -405,7 +404,7 @@ window.addEventListener("load", function () {
             e.classList.add(this.CssClasses_.RIPPLE_CONTAINER), this.rippleElement_ = document.createElement("span"), this.rippleElement_.classList.add(this.CssClasses_.RIPPLE), e.appendChild(this.rippleElement_), this.boundRippleBlurHandler = this.blurHandler.bind(this), this.rippleElement_.addEventListener("mouseup", this.boundRippleBlurHandler), this.element_.appendChild(e)
         }
         this.boundButtonBlurHandler = this.blurHandler.bind(this), this.element_.addEventListener("mouseup", this.boundButtonBlurHandler), this.element_.addEventListener("mouseleave", this.boundButtonBlurHandler)
-    }
+        }
 }, MaterialButton.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.rippleElement_ && this.rippleElement_.removeEventListener("mouseup", this.boundRippleBlurHandler), this.element_.removeEventListener("mouseup", this.boundButtonBlurHandler), this.element_.removeEventListener("mouseleave", this.boundButtonBlurHandler)
@@ -472,7 +471,7 @@ window.addEventListener("load", function () {
     "use strict";
     if (this.element_) {
         this.inputElement_ = this.element_.querySelector("." + this.CssClasses_.INPUT);
-        var e = document.createElement("span");
+            var e = document.createElement("span");
         e.classList.add(this.CssClasses_.BOX_OUTLINE);
         var t = document.createElement("span");
         t.classList.add(this.CssClasses_.FOCUS_HELPER);
@@ -483,7 +482,7 @@ window.addEventListener("load", function () {
             i.classList.add(this.CssClasses_.RIPPLE), this.rippleContainerElement_.appendChild(i), this.element_.appendChild(this.rippleContainerElement_)
         }
         this.boundInputOnChange = this.onChange_.bind(this), this.boundInputOnFocus = this.onFocus_.bind(this), this.boundInputOnBlur = this.onBlur_.bind(this), this.boundElementMouseUp = this.onMouseUp_.bind(this), this.inputElement_.addEventListener("change", this.boundInputOnChange), this.inputElement_.addEventListener("focus", this.boundInputOnFocus), this.inputElement_.addEventListener("blur", this.boundInputOnBlur), this.element_.addEventListener("mouseup", this.boundElementMouseUp), this.updateClasses_(), this.element_.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, MaterialCheckbox.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.rippleContainerElement_ && this.rippleContainerElement_.removeEventListener("mouseup", this.boundRippleMouseUp), this.inputElement_.removeEventListener("change", this.boundInputOnChange), this.inputElement_.removeEventListener("focus", this.boundInputOnFocus), this.inputElement_.removeEventListener("blur", this.boundInputOnBlur), this.element_.removeEventListener("mouseup", this.boundElementMouseUp)
@@ -549,9 +548,9 @@ window.addEventListener("load", function () {
             this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS), this.rippleContainerElement_ = document.createElement("span"), this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CONTAINER), this.rippleContainerElement_.classList.add(this.CssClasses_.JS_RIPPLE_EFFECT), this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CENTER), this.boundRippleMouseUp = this.onMouseUp_.bind(this), this.rippleContainerElement_.addEventListener("mouseup", this.boundRippleMouseUp);
             var e = document.createElement("span");
             e.classList.add(this.CssClasses_.RIPPLE), this.rippleContainerElement_.appendChild(e), this.element_.appendChild(this.rippleContainerElement_)
-        }
+            }
         this.boundInputOnChange = this.onChange_.bind(this), this.boundInputOnFocus = this.onFocus_.bind(this), this.boundInputOnBlur = this.onBlur_.bind(this), this.boundElementOnMouseUp = this.onMouseUp_.bind(this), this.inputElement_.addEventListener("change", this.boundInputOnChange), this.inputElement_.addEventListener("focus", this.boundInputOnFocus), this.inputElement_.addEventListener("blur", this.boundInputOnBlur), this.element_.addEventListener("mouseup", this.boundElementOnMouseUp), this.updateClasses_(), this.element_.classList.add("is-upgraded")
-    }
+        }
 }, MaterialIconToggle.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.rippleContainerElement_ && this.rippleContainerElement_.removeEventListener("mouseup", this.boundRippleMouseUp), this.inputElement_.removeEventListener("change", this.boundInputOnChange), this.inputElement_.removeEventListener("focus", this.boundInputOnFocus), this.inputElement_.removeEventListener("blur", this.boundInputOnBlur), this.element_.removeEventListener("mouseup", this.boundElementOnMouseUp)
@@ -589,9 +588,9 @@ window.addEventListener("load", function () {
 }, MaterialMenu.prototype.init = function () {
     "use strict";
     if (this.element_) {
-        var e = document.createElement("div");
+            var e = document.createElement("div");
         e.classList.add(this.CssClasses_.CONTAINER), this.element_.parentElement.insertBefore(e, this.element_), this.element_.parentElement.removeChild(this.element_), e.appendChild(this.element_), this.container_ = e;
-        var t = document.createElement("div");
+            var t = document.createElement("div");
         t.classList.add(this.CssClasses_.OUTLINE), this.outline_ = t, e.insertBefore(t, this.element_);
         var s = this.element_.getAttribute("for"),
             i = null;
@@ -606,21 +605,21 @@ window.addEventListener("load", function () {
                 o.classList.add(this.CssClasses_.RIPPLE), r.appendChild(o), l.appendChild(r), l.classList.add(this.CssClasses_.RIPPLE_EFFECT)
             }
         this.element_.classList.contains(this.CssClasses_.BOTTOM_LEFT) && this.outline_.classList.add(this.CssClasses_.BOTTOM_LEFT), this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT) && this.outline_.classList.add(this.CssClasses_.BOTTOM_RIGHT), this.element_.classList.contains(this.CssClasses_.TOP_LEFT) && this.outline_.classList.add(this.CssClasses_.TOP_LEFT), this.element_.classList.contains(this.CssClasses_.TOP_RIGHT) && this.outline_.classList.add(this.CssClasses_.TOP_RIGHT), this.element_.classList.contains(this.CssClasses_.UNALIGNED) && this.outline_.classList.add(this.CssClasses_.UNALIGNED), e.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, MaterialMenu.prototype.handleForClick_ = function (e) {
     "use strict";
     if (this.element_ && this.forElement_) {
         var t = this.forElement_.getBoundingClientRect(),
             s = this.forElement_.parentElement.getBoundingClientRect();
         this.element_.classList.contains(this.CssClasses_.UNALIGNED) || (this.element_.classList.contains(this.CssClasses_.BOTTOM_RIGHT) ? (this.container_.style.right = s.right - t.right + "px", this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + "px") : this.element_.classList.contains(this.CssClasses_.TOP_LEFT) ? (this.container_.style.left = this.forElement_.offsetLeft + "px", this.container_.style.bottom = s.bottom - t.top + "px") : this.element_.classList.contains(this.CssClasses_.TOP_RIGHT) ? (this.container_.style.right = s.right - t.right + "px", this.container_.style.bottom = s.bottom - t.top + "px") : (this.container_.style.left = this.forElement_.offsetLeft + "px", this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + "px"))
-    }
+        }
     this.toggle(e)
 }, MaterialMenu.prototype.handleForKeyboardEvent_ = function (e) {
     "use strict";
     if (this.element_ && this.container_ && this.forElement_) {
         var t = this.element_.querySelectorAll("." + this.CssClasses_.ITEM + ":not([disabled])");
         t && t.length > 0 && this.container_.classList.contains(this.CssClasses_.IS_VISIBLE) && (e.keyCode === this.Keycodes_.UP_ARROW ? (e.preventDefault(), t[t.length - 1].focus()) : e.keyCode === this.Keycodes_.DOWN_ARROW && (e.preventDefault(), t[0].focus()))
-    }
+        }
 }, MaterialMenu.prototype.handleItemKeyboardEvent_ = function (e) {
     "use strict";
     if (this.element_ && this.container_) {
@@ -635,7 +634,7 @@ window.addEventListener("load", function () {
                 e.target.dispatchEvent(i), i = new MouseEvent("mouseup"), e.target.dispatchEvent(i), e.target.click()
             } else e.keyCode === this.Keycodes_.ESCAPE && (e.preventDefault(), this.hide())
         }
-    }
+        }
 }, MaterialMenu.prototype.handleItemClick_ = function (e) {
     "use strict";
     null !== e.target.getAttribute("disabled") ? e.stopPropagation() : (this.closing_ = !0, window.setTimeout(function (e) {
@@ -665,9 +664,9 @@ window.addEventListener("load", function () {
         }.bind(this)), this.addAnimationEndListener_();
         var r = function (t) {
             t === e || this.closing_ || (document.removeEventListener("click", r), this.hide())
-        }.bind(this);
+            }.bind(this);
         document.addEventListener("click", r)
-    }
+        }
 }, MaterialMenu.prototype.hide = function () {
     "use strict";
     if (this.element_ && this.container_ && this.outline_) {
@@ -675,7 +674,7 @@ window.addEventListener("load", function () {
         var s = this.element_.getBoundingClientRect().height,
             i = this.element_.getBoundingClientRect().width;
         this.element_.classList.add(this.CssClasses_.IS_ANIMATING), this.applyClip_(s, i), this.container_.classList.remove(this.CssClasses_.IS_VISIBLE), this.addAnimationEndListener_()
-    }
+        }
 }, MaterialMenu.prototype.toggle = function (e) {
     "use strict";
     this.container_.classList.contains(this.CssClasses_.IS_VISIBLE) ? this.hide() : this.show(e)
@@ -697,7 +696,7 @@ window.addEventListener("load", function () {
     if (this.element_) {
         var e = document.createElement("div");
         e.className = "progressbar bar bar1", this.element_.appendChild(e), this.progressbar_ = e, e = document.createElement("div"), e.className = "bufferbar bar bar2", this.element_.appendChild(e), this.bufferbar_ = e, e = document.createElement("div"), e.className = "auxbar bar bar3", this.element_.appendChild(e), this.auxbar_ = e, this.progressbar_.style.width = "0%", this.bufferbar_.style.width = "100%", this.auxbar_.style.width = "0%", this.element_.classList.add("is-upgraded")
-    }
+        }
 }, MaterialProgress.prototype.mdlDowngrade_ = function () {
     "use strict";
     for (; this.element_.firstChild;) this.element_.removeChild(this.element_.firstChild)
@@ -776,9 +775,9 @@ window.addEventListener("load", function () {
             this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS), s = document.createElement("span"), s.classList.add(this.CssClasses_.RIPPLE_CONTAINER), s.classList.add(this.CssClasses_.RIPPLE_EFFECT), s.classList.add(this.CssClasses_.RIPPLE_CENTER), s.addEventListener("mouseup", this.onMouseup_.bind(this));
             var i = document.createElement("span");
             i.classList.add(this.CssClasses_.RIPPLE), s.appendChild(i), this.element_.appendChild(s)
-        }
+            }
         this.btnElement_.addEventListener("change", this.onChange_.bind(this)), this.btnElement_.addEventListener("focus", this.onFocus_.bind(this)), this.btnElement_.addEventListener("blur", this.onBlur_.bind(this)), this.element_.addEventListener("mouseup", this.onMouseup_.bind(this)), this.updateClasses_(), this.element_.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, componentHandler.register({
     constructor: MaterialRadio,
     classAsString: "MaterialRadio",
@@ -812,7 +811,7 @@ window.addEventListener("load", function () {
             clientY: this.element_.getBoundingClientRect().y
         });
         this.element_.dispatchEvent(t)
-    }
+        }
 }, MaterialSlider.prototype.updateValueStyles_ = function (e) {
     "use strict";
     var t = (this.element_.value - this.element_.min) / (this.element_.max - this.element_.min);
@@ -840,7 +839,7 @@ window.addEventListener("load", function () {
         }
         this.boundInputHandler = this.onInput_.bind(this), this.boundChangeHandler = this.onChange_.bind(this), this.boundMouseUpHandler = this.onMouseUp_.bind(this), this.boundContainerMouseDownHandler = this.onContainerMouseDown_.bind(this),
             this.element_.addEventListener("input", this.boundInputHandler), this.element_.addEventListener("change", this.boundChangeHandler), this.element_.addEventListener("mouseup", this.boundMouseUpHandler), this.element_.parentElement.addEventListener("mousedown", this.boundContainerMouseDownHandler), this.updateValueStyles_(), this.element_.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, MaterialSlider.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.element_.removeEventListener("input", this.boundInputHandler), this.element_.removeEventListener("change", this.boundChangeHandler), this.element_.removeEventListener("mouseup", this.boundMouseUpHandler), this.element_.parentElement.removeEventListener("mousedown", this.boundContainerMouseDownHandler)
@@ -871,7 +870,7 @@ window.addEventListener("load", function () {
     for (var a = [s, i, n], l = 0; l < a.length; l++) {
         var r = document.createElement("div");
         r.classList.add(this.CssClasses_.MDL_SPINNER_CIRCLE), a[l].appendChild(r)
-    }
+        }
     t.appendChild(s), t.appendChild(i), t.appendChild(n), this.element_.appendChild(t)
 }, MaterialSpinner.prototype.stop = function () {
     "use strict";
@@ -956,9 +955,9 @@ window.addEventListener("load", function () {
             this.element_.classList.add(this.CssClasses_.RIPPLE_IGNORE_EVENTS), this.rippleContainerElement_ = document.createElement("span"), this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CONTAINER), this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_EFFECT), this.rippleContainerElement_.classList.add(this.CssClasses_.RIPPLE_CENTER), this.rippleContainerElement_.addEventListener("mouseup", this.boundMouseUpHandler);
             var i = document.createElement("span");
             i.classList.add(this.CssClasses_.RIPPLE), this.rippleContainerElement_.appendChild(i), this.element_.appendChild(this.rippleContainerElement_)
-        }
+            }
         this.boundChangeHandler = this.onChange_.bind(this), this.boundFocusHandler = this.onFocus_.bind(this), this.boundBlurHandler = this.onBlur_.bind(this), this.inputElement_.addEventListener("change", this.boundChangeHandler), this.inputElement_.addEventListener("focus", this.boundFocusHandler), this.inputElement_.addEventListener("blur", this.boundBlurHandler), this.element_.addEventListener("mouseup", this.boundMouseUpHandler), this.updateClasses_(), this.element_.classList.add("is-upgraded")
-    }
+        }
 }, MaterialSwitch.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.rippleContainerElement_ && this.rippleContainerElement_.removeEventListener("mouseup", this.boundMouseUpHandler), this.inputElement_.removeEventListener("change", this.boundChangeHandler), this.inputElement_.removeEventListener("focus", this.boundFocusHandler), this.inputElement_.removeEventListener("blur", this.boundBlurHandler), this.element_.removeEventListener("mouseup", this.boundMouseUpHandler)
@@ -1064,7 +1063,7 @@ window.addEventListener("load", function () {
     if (this.element_) {
         var e = this.element_.getAttribute("for");
         e && (this.forElement_ = document.getElementById(e)), this.forElement_ && (this.forElement_.getAttribute("tabindex") || this.forElement_.setAttribute("tabindex", "0"), this.boundMouseEnterHandler = this.handleMouseEnter_.bind(this), this.boundMouseLeaveHandler = this.handleMouseLeave_.bind(this), this.forElement_.addEventListener("mouseenter", this.boundMouseEnterHandler, !1), this.forElement_.addEventListener("click", this.boundMouseEnterHandler, !1), this.forElement_.addEventListener("blur", this.boundMouseLeaveHandler), this.forElement_.addEventListener("touchstart", this.boundMouseEnterHandler, !1), this.forElement_.addEventListener("mouseleave", this.boundMouseLeaveHandler))
-    }
+        }
 }, MaterialTooltip.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.forElement_ && (this.forElement_.removeEventListener("mouseenter", this.boundMouseEnterHandler, !1), this.forElement_.removeEventListener("click", this.boundMouseEnterHandler, !1), this.forElement_.removeEventListener("touchstart", this.boundMouseEnterHandler, !1), this.forElement_.removeEventListener("mouseleave", this.boundMouseLeaveHandler))
@@ -1147,7 +1146,7 @@ window.addEventListener("load", function () {
         for (var t = this.element_.childNodes, s = 0; s < t.length; s++) {
             var i = t[s];
             i.classList && i.classList.contains(this.CssClasses_.HEADER) && (this.header_ = i), i.classList && i.classList.contains(this.CssClasses_.DRAWER) && (this.drawer_ = i), i.classList && i.classList.contains(this.CssClasses_.CONTENT) && (this.content_ = i)
-        }
+            }
         this.header_ && (this.tabBar_ = this.header_.querySelector("." + this.CssClasses_.TAB_BAR));
         var n = this.Mode_.STANDARD;
         if (this.screenSizeMediaQuery_ = window.matchMedia(this.Constant_.MAX_WIDTH), this.screenSizeMediaQuery_.addListener(this.screenSizeHandler_.bind(this)), this.screenSizeHandler_(), this.header_ && (this.header_.classList.contains(this.CssClasses_.HEADER_SEAMED) ? n = this.Mode_.SEAMED : this.header_.classList.contains(this.CssClasses_.HEADER_WATERFALL) ? (n = this.Mode_.WATERFALL, this.header_.addEventListener("transitionend", this.headerTransitionEndHandler.bind(this)), this.header_.addEventListener("click", this.headerClickHandler.bind(this))) : this.header_.classList.contains(this.CssClasses_.HEADER_SCROLL) && (n = this.Mode_.SCROLL, e.classList.add(this.CssClasses_.HAS_SCROLLING_HEADER)), n === this.Mode_.STANDARD ? (this.header_.classList.add(this.CssClasses_.CASTING_SHADOW), this.tabBar_ && this.tabBar_.classList.add(this.CssClasses_.CASTING_SHADOW)) : n === this.Mode_.SEAMED || n === this.Mode_.SCROLL ? (this.header_.classList.remove(this.CssClasses_.CASTING_SHADOW), this.tabBar_ && this.tabBar_.classList.remove(this.CssClasses_.CASTING_SHADOW)) : n === this.Mode_.WATERFALL && (this.content_.addEventListener("scroll", this.contentScrollHandler_.bind(this)), this.contentScrollHandler_())), this.drawer_) {
@@ -1181,7 +1180,7 @@ window.addEventListener("load", function () {
             for (var p = this.tabBar_.querySelectorAll("." + this.CssClasses_.TAB), C = this.content_.querySelectorAll("." + this.CssClasses_.PANEL), E = 0; E < p.length; E++) new MaterialLayoutTab(p[E], p, C, this)
         }
         this.element_.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, componentHandler.register({
     constructor: MaterialLayout,
     classAsString: "MaterialLayout",
@@ -1225,9 +1224,9 @@ window.addEventListener("load", function () {
                     l.appendChild(r), t[n].insertBefore(l, a)
                 }
             }
-        }
+            }
         this.element_.classList.add(this.CssClasses_.IS_UPGRADED)
-    }
+        }
 }, componentHandler.register({
     constructor: MaterialDataTable,
     classAsString: "MaterialDataTable",
@@ -1262,9 +1261,9 @@ window.addEventListener("load", function () {
             var l = e.clientX ? e.clientX : e.touches[0].clientX,
                 r = e.clientY ? e.clientY : e.touches[0].clientY;
             i = Math.round(l - a.left), n = Math.round(r - a.top)
-        }
+            }
         this.setRippleXY(i, n), this.setRippleStyles(!0), window.requestAnimationFrame(this.animFrameHandler.bind(this))
-    }
+        }
 }, MaterialRipple.prototype.upHandler_ = function (e) {
     "use strict";
     e && 2 !== e.detail && this.rippleElement_.classList.remove(this.CssClasses_.IS_VISIBLE)
@@ -1284,11 +1283,11 @@ window.addEventListener("load", function () {
             if (null !== this.rippleElement_) {
                 var s, i, n, a = "translate(" + this.x_ + "px, " + this.y_ + "px)";
                 t ? (i = this.Constant_.INITIAL_SCALE, n = this.Constant_.INITIAL_SIZE) : (i = this.Constant_.FINAL_SCALE, n = this.rippleSize_ + "px", e && (a = "translate(" + this.boundWidth / 2 + "px, " + this.boundHeight / 2 + "px)")), s = "translate(-50%, -50%) " + a + i, this.rippleElement_.style.webkitTransform = s, this.rippleElement_.style.msTransform = s, this.rippleElement_.style.transform = s, t ? this.rippleElement_.classList.remove(this.CssClasses_.IS_ANIMATING) : this.rippleElement_.classList.add(this.CssClasses_.IS_ANIMATING)
-            }
+                }
         }, this.animFrameHandler = function () {
             this.frameCount_-- > 0 ? window.requestAnimationFrame(this.animFrameHandler.bind(this)) : this.setRippleStyles(!1)
         })
-    }
+        }
 }, MaterialRipple.prototype.mdlDowngrade_ = function () {
     "use strict";
     this.element_.removeEventListener("mousedown", this.boundDownHandler), this.element_.removeEventListener("touchstart", this.boundDownHandler), this.element_.removeEventListener("mouseup", this.boundUpHandler), this.element_.removeEventListener("mouseleave", this.boundUpHandler), this.element_.removeEventListener("touchend", this.boundUpHandler), this.element_.removeEventListener("blur", this.boundUpHandler)

@@ -7,7 +7,9 @@
 <%- jsLsload('js/lazyload.min.js') %>
 <%- jsLsload('js/js.min.js') %>
 <% } %>
+
 <%- partial('_widget/nprogress') %>
+
 <% if( theme.js_effect.smoothscroll === true ) { %>
 <% if(theme.materialcdn.use === true) { %>
 <%- jsLsload({path: (theme.materialcdn.base + '/js/smoothscroll.js'), key: 'js/smoothscroll.js'}) %>
@@ -15,7 +17,9 @@
 <%- jsLsload('js/smoothscroll.js') %>
 <% } %>
 <% } %>
+
 <%- partial('_partial/footer-option') %>
+
 <% if( (page.current === 1) && (is_home()) ) { %>
 <!-- Swiftye -->
 <% if( theme.search.use === 'swiftype' ) { %>
@@ -58,7 +62,6 @@
         // Post_Toc parent position fixed
         $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
     });
-
 </script>
 
 <!-- MathJax Load-->
@@ -79,7 +82,6 @@
             queue.execNext();
         },200);
     });
-
 </script>
 
 <!-- Bing Background -->
@@ -88,7 +90,6 @@
     queue.offer(function(){
         $('body').attr('data-original', 'https://api.i-meto.com/bing?<%= theme.background.bing.parameter %>');
     });
-
 </script>
 <% } %>
 

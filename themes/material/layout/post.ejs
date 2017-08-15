@@ -7,12 +7,15 @@
 <% if(page.layout === 'tags') { %>
 <!-- Tags Cloud -->
 <%- partial('_widget/page-tagcloud') %>
+
 <% } else if(page.layout === 'links') { %>
 <!-- Single Links Page -->
 <%- partial('_widget/page-links') %>
+
 <% } else if(page.layout === 'timeline') { %>
 <!-- Single Timeline Page -->
 <%- partial('_widget/page-timeline') %>
+
 <% } else { %>
 <!-- Post Module -->
 <div class="material-post_container">
@@ -45,5 +48,5 @@
         <!-- Post Prev & Next Nav -->
         <%- partial('_partial/post-nav') %>
     </div>
-</div>
+    </div>
 <% } %>
